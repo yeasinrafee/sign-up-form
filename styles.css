@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary: 200, 100%, 50%;
+  --primary-dark: 200, 100%, 6%;
+  --primary-light: 200, 100%, 91%;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+  background-image: url("daniel-heritage-RQ1EzmpCjgo-unsplash.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 32rem;
+  width: 50rem;
+  padding: 2rem 3.5rem;
+  --color: hsl(var(--primary-dark), 0.6);
+  background-color: var(--color);
+  box-shadow: 0 0 15px 0 var(--color);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.description {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.text :last-child {
+  margin-bottom: 2.6rem;
+}
+
+.input-header {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  column-gap: 3rem;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+.element label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.element input {
+  font-size: 1.25rem;
+  padding: 0.15em;
+  background-color: hsl(var(--primary-light), 0.3);
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.767);
+  font-weight: lighter;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+.element input:focus {
+  box-shadow: 0 0 0 1px hsl(var(--primary));
+}
+
+.btn-form {
+  margin: 2rem 0 2.5rem 0;
+  padding: 0.6rem 1.8rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #fff;
+  background-color: hsl(var(--primary), 0.4);
+  border: 1px solid hsl(var(--primary));
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+  outline: none;
+  cursor: pointer;
+}
+.btn-form:hover,
+.btn-form:focus {
+  background-color: hsl(var(--primary));
+}
+
+.form-text {
+  font-size: 1rem;
+}
