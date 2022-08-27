@@ -88,8 +88,14 @@ body {
   -o-border-radius: 0.25rem;
 }
 .element input:focus {
-  box-shadow: 0 0 0 1px hsl(var(--primary));
+  /* box-shadow: 0 0 0 1px hsl(var(--primary)); */
+  box-shadow: 0 0 0 1.3px rgba(255, 0, 0, 0.651);
 }
+.element input:valid {
+  box-shadow: 0 0 0 1.3px rgba(172, 255, 47, 0.904);
+}
+/* .element input:invalid {
+} */
 
 .btn-form {
   margin: 1.5rem 0 1.5rem 0;
